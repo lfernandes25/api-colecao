@@ -16,11 +16,13 @@ public class LoginController {
 
         if (user.getUsername() == null || user.getUsername().isEmpty()) {
             response.setError("O nome de usuário não pode estar vazio");
+            response.setField("username");
             return response;
         }
 
         if (user.getPassword() == null || user.getPassword().isEmpty()) {
             response.setError("A senha não pode estar vazia");
+            response.setField("password");
             return response;
         }
 
@@ -31,27 +33,5 @@ public class LoginController {
         }
 
         return response;
-    }
-
-    // Classe de resposta
-    public static class Response {
-        private String message;
-        private String error;
-
-        public String getMessage() {
-            return message;
-        }
-
-        public void setMessage(String message) {
-            this.message = message;
-        }
-
-        public String getError() {
-            return error;
-        }
-
-        public void setError(String error) {
-            this.error = error;
-        }
     }
 }
