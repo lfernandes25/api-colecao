@@ -1,4 +1,4 @@
-package com.lfernandes;
+package com.lfernandes.Class;
 
 public class User {
     private String username;

@@ -1,6 +1,9 @@
-package com.lfernandes;
+package com.lfernandes.Controller;
 
 
+import com.lfernandes.Service.LoginService;
+import com.lfernandes.Response;
+import com.lfernandes.Class.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
